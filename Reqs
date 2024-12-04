@@ -1,0 +1,9 @@
+Needs: 
+
+(1) Take website listed and scrape Women's Data
+(2) Transform Time into seconds from hours:minutes:seconds
+(3) Combine T1+T2 times for Total Transition Time
+(4) Calculate placement Quartile based on Finish Time for each athlete and create new column to store
+(5) Calculate placement Quartile based on Total Transition Time for Each Athlete and create new column to store
+
+Model to be built will try to predict quartile finish based o quartile transition
