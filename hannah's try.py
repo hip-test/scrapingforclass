@@ -93,14 +93,14 @@ async def scrape_table_data():
         
         return df
 
-async def main():
-    # Since we are in an interactive environment, we can just `await` directly
-    df = await scrape_table_data()
 
-    # Set pandas options to display all rows in the DataFrame
-    pd.set_option('display.max_rows', None)  # Display all rows
-    pd.set_option('display.max_columns', None)  # Display all columns (if necessary)
-    pd.set_option('display.width', None)  # Let pandas decide the width of the display
+# Since we are in an interactive environment, we can just `await` directly
+df = await scrape_table_data()
 
-    # Display the full DataFrame
-    df
+# Set pandas options to display all rows in the DataFrame
+pd.set_option('display.max_rows', None)  # Display all rows
+pd.set_option('display.max_columns', None)  # Display all columns (if necessary)
+pd.set_option('display.width', None)  # Let pandas decide the width of the display
+
+# Display the full DataFrame
+df
