@@ -1,6 +1,5 @@
 from playwright.async_api import async_playwright
 import pandas as pd
-import asyncio
 import re
 
 # Define the URL
@@ -104,8 +103,4 @@ async def main():
     pd.set_option('display.width', None)  # Let pandas decide the width of the display
 
     # Display the full DataFrame
-    print(df)
-
-
-if __name__ == "__main__":
-    asyncio.run(main())
+    df
